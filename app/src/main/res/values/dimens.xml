@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="playing_controls_icon_width">64dp</dimen>
+    <dimen name="playing_controls_icon_margin_right">16dp</dimen>
+</resources>

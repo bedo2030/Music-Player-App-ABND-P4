@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.peoject_4_musicplayer.MainActivity">
+    <!-- Activity Action bar -->
+    <androidx.appcompat.widget.Toolbar
+        xmlns:design="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_activity_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="locale"
+        design:titleTextColor="@color/actionBarTitle"/>
+    <!-- Main Activity Categories -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Now Playing -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainActivityCategoryBackground"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/categoryIconHeight"
+                android:layout_weight="1"
+                android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+            <TextView
+                android:id="@+id/now_playing_textview"
+                style="@style/mainActivityCategoryTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="@string/now_playing_text" />
+        </LinearLayout>
+        <!-- divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+        <!-- Music Library -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainActivityCategoryBackground"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/categoryIconHeight"
+                android:layout_weight="1"
+                android:src="@drawable/ic_library_music_black_24dp" />
+
+            <TextView
+                android:id="@+id/music_library_textview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="@string/music_library_text"
+                style="@style/mainActivityCategoryTextView" />
+        </LinearLayout>
+        <!-- divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+        <!--Favourites -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainActivityCategoryBackground"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/categoryIconHeight"
+                android:layout_weight="1"
+                android:src="@drawable/ic_favorite_black_24dp" />
+
+            <TextView
+                android:id="@+id/favourites_textview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="@string/favourites_text"
+                style="@style/mainActivityCategoryTextView" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Bedo Player</string>
+    <string name="now_playing_text">Now Playing</string>
+    <string name="music_library_text">Music Library</string>
+    <string name="favourites_text">Favourites</string>
+</resources>
